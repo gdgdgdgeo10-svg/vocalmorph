@@ -1,0 +1,9 @@
+# Ensure binary files are not corrupted by line-ending conversions in Git
+*.jar binary
+*.png binary
+*.so binary
+*.aar binary
+
+# Ensure gradlew retains LF line endings on Unix/Linux/macOS
+gradlew text eol=lf
+gradlew.bat text eol=crlf
