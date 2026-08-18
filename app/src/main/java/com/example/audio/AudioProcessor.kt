@@ -610,6 +610,7 @@ class AudioProcessor(private val context: Context) {
                     AudioAttributes.Builder()
                         .setUsage(AudioAttributes.USAGE_MEDIA)
                         .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
+                        .setFlags(AudioAttributes.FLAG_LOW_LATENCY)
                         .build()
                 )
                 .setAudioFormat(
@@ -619,6 +620,7 @@ class AudioProcessor(private val context: Context) {
                         .setChannelMask(AudioFormat.CHANNEL_OUT_MONO)
                         .build()
                 )
+                .setPerformanceMode(AudioTrack.PERFORMANCE_MODE_LOW_LATENCY)
                 .setBufferSizeInBytes(max(minOutBuf, FRAME_CHUNK_SIZE * 4))
                 .setTransferMode(AudioTrack.MODE_STREAM)
                 .build()
