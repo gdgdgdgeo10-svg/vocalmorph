@@ -1,0 +1,6 @@
+{
+  "name": "VocalMorph",
+  "description": "Real-time low-latency voice changer with pitch shifting, formant morphing, ring modulation robot effect, echo, and live audio visualizer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
